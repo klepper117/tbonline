@@ -1,0 +1,9 @@
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #181A20;
+    border: 2px solid #181A20;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
