@@ -3,54 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hoja de estilos compartida por todas las páginas -->
     <link rel="stylesheet" href="../css/index.css">
     <title>TB Online</title>
 </head>
 <body>
+    <!-- Encabezado: el logo enlaza a la página de inicio -->
     <header>
-        <a href="index.html">
+        <a href="index.html" class="logo-link">
             <h1>TB Online</h1>
         </a>
-        <nav> 
-            <ul> 
-                <li><a href="Inicio.html">Inicio</a></li>
-                <li><a href="Películas.html">Películas</a></li>
-                <li><a href="Series.html">Series</a></li>
-                <li><a href="Anime.html">Animes</a></li>
-                <li><a href="Novelas.html">Novelas Visuales</a></li>
-                <li><a href="Manga.html">Manga</a></li>
-            </ul>
-        </nav>
-    
-<form role="search" action="#">
-    <input
-        type="search"
-        id="buscar"
-        name="q"
-        placeholder="Buscar películas, series, manga, anime, novelas visuales"
-        aria-label="Buscar contenido"
-    >
-    <button type="submit">Buscar</button>
-</form>
     </header>
 
-    <aside class="tbo-sidebar">
-       <p>busqueda</p> 
-       <p>filtros</p> 
+    <!-- Barra lateral: buscador arriba y menú de categorías debajo -->
+    <aside class="steam-sidebar">
+        <!-- Zona superior: buscador y botón de filtro -->
+        <div class="sidebar-header">
+            <form class="steam-search-bar" role="search" action="#">
+                <!-- Icono de lupa (SVG decorativo) -->
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+
+                <!-- Campo donde el usuario escribe lo que quiere buscar -->
+                <input type="search" id="buscar" name="q" placeholder="Buscar..." aria-label="Buscar contenido" />
+
+                <!-- Botón de filtros (type="button" para que no envíe el formulario) -->
+                <button type="button" class="filter-btn" title="Filtrar" aria-label="Filtrar">
+                    <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" y1="6" x2="20" y2="6"></line>
+                        <line x1="6" y1="12" x2="18" y2="12"></line>
+                        <line x1="8" y1="18" x2="16" y2="18"></line>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <!-- Menú de categorías agrupadas por tipo de contenido -->
+        <div class="sidebar-content">
+            <!-- Grupo 1: contenido en vídeo -->
+            <details open class="category-group">
+                <summary class="category-title">VER (3)</summary>
+                <ul class="nav-list">
+                    <li><a href="Películas.html" class="nav-item"><span class="icon">🎬</span><span class="text">Películas</span></a></li>
+                    <li><a href="Series.html" class="nav-item"><span class="icon">📺</span><span class="text">Series</span></a></li>
+                    <li><a href="Anime.html" class="nav-item"><span class="icon">⛩️</span><span class="text">Animes</span></a></li>
+                </ul>
+            </details>
+
+            <!-- Grupo 2: contenido de lectura -->
+            <details open class="category-group">
+                <summary class="category-title">LEER (2)</summary>
+                <ul class="nav-list">
+                    <li><a href="Manga.html" class="nav-item"><span class="icon">📚</span><span class="text">Manga</span></a></li>
+                    <li><a href="Novelas.html" class="nav-item"><span class="icon">📖</span><span class="text">Novelas Visuales</span></a></li>
+                </ul>
+            </details>
+        </div>
     </aside>
+
+    <!-- Contenido principal: aquí se muestran las tarjetas del catálogo -->
     <main>
-            <h2>Contenido Destacado</h2>
-            <section class="tbo-grid">
-                <article class="tbo-card">
-                    <h3>pelicula 1</h3>
-                    <p>la guerra del mañana.</p>
-                </article>    
-                </section>
+        <h2>Contenido Destacado</h2>
+        <!-- .tbo-grid coloca las tarjetas en una rejilla que se adapta al ancho -->
+        <section class="tbo-grid">
+            <!-- Cada .tbo-card es una ficha de contenido -->
+            <article class="tbo-card">
+                <h3>pelicula 1</h3>
+                <p>la guerra del mañana.</p>
+            </article>
+        </section>
     </main>
 
+    <!-- Pie de página con el aviso de copyright -->
     <footer class="tbo-footer">
         <p>&copy; 2026 TB Online. Todos los derechos reservados.</p>
     </footer>
+    <!-- Script de comportamiento (búsqueda y filtros) -->
     <script src="../js/index.js"></script>
 </body>
 </html>

@@ -80,12 +80,59 @@ h1{
   color: #c6d4df;
 }
 
-/* Espaciado para la lista general de inicio */
-.main-nav {
-  margin-bottom: 8px;
+/* ===== Barra lateral de navegación (aside) ===== */
+
+/* Contenedor principal del menú lateral */
+.steam-sidebar {
+  background-color: #1b2838;          /* fondo azul oscuro estilo Steam */
+  border-right: 1px solid #0e1622;    /* línea que separa del contenido */
 }
 
-/* Barra de busqueda*//* Contenedor exterior */
+/* Zona que agrupa las categorías (debajo del buscador) */
+.sidebar-content {
+  padding: 8px 0;
+}
+
+/* Bloque de cada categoría (VER / LEER) */
+.category-group {
+  margin-bottom: 4px;
+}
+
+/* Lista de enlaces dentro de una categoría */
+.nav-list {
+  list-style: none;                   /* quita los puntos de la lista */
+}
+
+/* Cada enlace del menú */
+.nav-item {
+  display: flex;                      /* icono y texto en la misma fila */
+  align-items: center;
+  gap: 8px;                           /* separación entre icono y texto */
+  padding: 6px 12px;
+  color: #c6d4df;
+  text-decoration: none;              /* sin subrayado */
+  font-size: 14px;
+}
+
+/* Resalta el enlace al pasar el ratón por encima */
+.nav-item:hover {
+  background-color: #2a475e;
+  color: #ffffff;
+}
+
+/* Tamaño del icono (emoji) de cada enlace */
+.nav-item .icon {
+  font-size: 15px;
+}
+
+/* Texto del enlace (hereda color y tamaño de .nav-item) */
+.nav-item .text {
+  white-space: nowrap;                /* evita que el texto salte de línea */
+}
+
+/* ===== Barra de búsqueda ===== */
+
+/* Contenedor exterior */
 .sidebar-header {
   padding: 8px 10px;
   background-color: #171d25;
