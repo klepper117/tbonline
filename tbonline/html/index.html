@@ -1,21 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
-    <title>javascript Curso</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <title>TB Online</title>
 </head>
 <body>
     <header>
-        <h1>Nombre de la Página</h1>
+        <h1>TB Online</h1>
+        <nav> 
+            <ul> 
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Películas</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Animes</a></li>
+                <li><a href="#">Novelas Visuales</a></li>
+                <li><a href="#">Manga</a></li>
+            </ul>
+        </nav>
+    
+<form role="search" action="#">
+    <input
+        type="search"
+        id="buscar"
+        name="q"
+        placeholder="Buscar películas, series, manga, anime, novelas visuales"
+        aria-label="Buscar contenido"
+    >
+    <button type="submit">Buscar</button>
+</form>
     </header>
+
     <aside class="tbo-sidebar">
-        <!-- Barra superior de Busqueda-->
+       <p>busqueda</p> 
+       <p>filtros</p> 
     </aside>
-    <footer>
-        <p>&copy; 2023 Mi Página. Todos los derechos reservados.</p>
+    <main>
+            <h2>Contenido Destacado</h2>
+            <section class="tbo-grid">
+                <article class="tbo-card">
+                    <h3>pelicula 1</h3>
+                    <p>la guerra del mañana.</p>
+                </article>    
+                </section>
+    </main>
+
+    <footer class="tbo-footer">
+        <p>&copy; 2026 TB Online. Todos los derechos reservados.</p>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
