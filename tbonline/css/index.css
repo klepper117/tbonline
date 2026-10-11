@@ -59,3 +59,7 @@ h1{
     padding: 15px 20px;
     text-align: right;
 }
+.logo-link {
+  text-decoration: none;
+  color: inherit; /* Mantiene el color blanco del texto */
+}
