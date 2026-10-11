@@ -11,26 +11,86 @@
         <a href="index.html" class="logo-link">
             <h1>TB Online</h1>
         </a>
-        <nav>
-            <div class="sidebar-search-bar">
-                <input type="text" placeholder="Página principal" readonly />
-                <button class="icon-btn">田</button>
-            </div>
-            <ul> 
-                <li><a href="Inicio.html">Inicio</a></li>
-                <li><a href="Películas.html">Películas</a></li>
-                <li><a href="Series.html">Series</a></li>
-                <li><a href="Anime.html">Animes</a></li>
-                <li><a href="Novelas.html">Novelas Visuales</a></li>
-                <li><a href="Manga.html">Manga</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <aside class="tbo-sidebar">
-       <p>busqueda</p> 
-       <p>filtros</p> 
-    </aside>
+    <!-- Todo este aside fue hecho por gemini-->
+    <aside class="steam-sidebar">
+        <!-- Barra de busqueda -->
+        <div class="sidebar-header">
+            <div class="steam-search-bar">
+                
+    <!-- Icono Lupa SVG -->
+    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+
+    <!-- Campo de entrada -->
+    <input type="text" placeholder="" />
+
+    <!-- Icono Filtro SVG -->
+    <button class="filter-btn" title="Filtrar">
+      <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="6" x2="20" y2="6"></line>
+        <line x1="6" y1="12" x2="18" y2="12"></line>
+        <line x1="8" y1="18" x2="16" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  <!-- Fin de barra de busqueda-->
+</div>
+
+  <!-- Lista de Navegación -->
+  <div class="sidebar-content">
+
+    <!-- Categoría 1: VER -->
+    <details open class="category-group">
+      <summary class="category-title">VER (3)</summary>
+      <ul class="nav-list">
+        <li>
+          <a href="#" class="nav-item">
+            <span class="icon">🎬</span>
+            <span class="text">Películas</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">
+            <span class="icon">📺</span>
+            <span class="text">Series</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">
+            <span class="icon">⛩️</span>
+            <span class="text">Animes</span>
+          </a>
+        </li>
+      </ul>
+    </details>
+
+    <!-- Categoría 2: LEER -->
+    <details open class="category-group">
+      <summary class="category-title">LEER (2)</summary>
+      <ul class="nav-list">
+        <li>
+          <a href="#" class="nav-item">
+            <span class="icon">📚</span>
+            <span class="text">Manga</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">
+            <span class="icon">📖</span>
+            <span class="text">Novelas Visuales</span>
+          </a>
+        </li>
+      </ul>
+    </details>
+
+  </div>
+</aside>
+
+
     <main>
             <h2>Contenido Destacado</h2>
             <section class="tbo-grid">

@@ -63,3 +63,86 @@ h1{
   text-decoration: none;
   color: inherit; /* Mantiene el color blanco del texto */
 }
+
+/* Lo siguiente esta hecho por gemini */
+.category-title {
+  padding: 8px 12px 4px 12px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #67707b;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.category-title:hover {
+  color: #c6d4df;
+}
+
+/* Espaciado para la lista general de inicio */
+.main-nav {
+  margin-bottom: 8px;
+}
+
+/* Barra de busqueda*//* Contenedor exterior */
+.sidebar-header {
+  padding: 8px 10px;
+  background-color: #171d25;
+}
+
+/* Caja de búsqueda principal */
+.steam-search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #212529;
+  border-radius: 3px;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Icono de Lupa */
+.steam-search-bar .search-icon {
+  width: 14px;
+  height: 14px;
+  color: #67707b;
+  flex-shrink: 0; /* Evita que el icono se aplaste */
+  margin-right: 6px;
+}
+
+/* Campo de texto (input) - AQUÍ ESTABA EL DETALLE */
+.steam-search-bar input {
+  flex: 1;
+  min-width: 0; /* MUY IMPORTANTE: evita que el input empuje a otros elementos fuera de la caja */
+  background: transparent;
+  border: none !important;
+  outline: none !important;
+  color: #c6d4df;
+  font-size: 12px;
+  padding: 2px 0;
+}
+
+/* Botón e Icono de Filtro */
+.steam-search-bar .filter-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Evita que el filtro se aplaste o se pegue */
+}
+
+.steam-search-bar .filter-icon {
+  width: 16px;
+  height: 16px;
+  color: #67707b;
+  transition: color 0.15s ease;
+}
+
+.steam-search-bar .filter-btn:hover .filter-icon {
+  color: #ffffff;
+}
